@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <object type="platform" width="32" height="96">
+  <properties>
+   <property name="dx" type="int" value="0"/>
+   <property name="dy" type="int" value="-3"/>
+   <property name="group" type="int" value="1"/>
+  </properties>
+ </object>
+</template>

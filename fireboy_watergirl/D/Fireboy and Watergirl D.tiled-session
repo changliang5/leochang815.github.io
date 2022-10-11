@@ -1,0 +1,68 @@
+{
+    "activeFile": "dist/data/crystal/levels/crystal_exp_1.json",
+    "expandedProjectPaths": [
+        "dist/data/crystal",
+        "dist",
+        "dist/data/tutorials/levels",
+        ".",
+        "dist/data",
+        "dist/data/crystal/levels",
+        "dist/data/tutorials"
+    ],
+    "file.lastUsedOpenFilter": "全部文件 (*)",
+    "fileStates": {
+        "dist/assets/tilemaps/tilesets/Chars.json": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "dist/assets/tilemaps/tilesets/Ground.json": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1
+        },
+        "dist/assets/tilemaps/tilesets/LargeObjects.json": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "dist/assets/tilemaps/tilesets/Objects.json": {
+            "scaleInDock": 1
+        },
+        "dist/data/crystal/levels/crystal_07.json": {
+            "scale": 0.7893830128205128,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 886.7685124092777,
+                "y": 546.6294472922905
+            }
+        },
+        "dist/data/crystal/levels/crystal_37.json": {
+            "scale": 0.7893830128205128,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 886.7685124092777,
+                "y": 546.6294472922905
+            }
+        },
+        "dist/data/crystal/levels/crystal_exp_1.json": {
+            "scale": 0.7893830128205128,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 624.5383951682485,
+                "y": 954.5429630005583
+            }
+        }
+    },
+    "openFiles": [
+        "dist/data/crystal/levels/crystal_07.json",
+        "dist/data/crystal/levels/crystal_exp_1.json",
+        "dist/data/crystal/levels/crystal_37.json"
+    ],
+    "project": "Fireboy and Watergirl D.tiled-project",
+    "property.type": "int",
+    "recentFiles": [
+        "dist/data/crystal/levels/crystal_07.json",
+        "dist/data/crystal/levels/crystal_37.json",
+        "dist/data/crystal/levels/crystal_exp_1.json",
+        "dist/data/crystal/levels/crystal_05.json",
+        "dist/data/crystal/levels/crystal_06.json"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+	"A": {
+		"name": "Fireboy and Watergirl A",
+		"path": "../A/dist/data/",
+		"data": "fb-forest:progress"
+	},
+	"B": {
+		"name": "Fireboy and Watergirl B",
+		"path": "../B/dist/data/",
+		"data": "fb-light:progress"
+	},
+	"C": {
+		"name": "Fireboy and Watergirl C",
+		"path": "../C/dist/data/",
+		"data": "fb-ice:progress"
+	},
+	"D": {
+		"name": "Fireboy and Watergirl D",
+		"path": "../D/dist/data/",
+		"data": "fb-crystal:progress"
+	},
+	"E": {
+		"name": "Fireboy and Watergirl E",
+		"path": "../E/dist/data/",
+		"data": "fb-elements:progress"
+	}
+}

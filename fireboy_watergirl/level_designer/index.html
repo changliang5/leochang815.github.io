@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>关卡表编辑器</title>
+	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+	<link rel="stylesheet" href="./static/fa/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="./static/amazeui/amazeui.min.css" />
+	<link rel="stylesheet" href="./static/css/index.css" />
+	<script>
+		var readOnlyMode = false;
+	</script>
+	<script src="./static/js/common/jquery-3.3.1.min.js"></script>
+	<script src="./static/amazeui/amazeui.min.js"></script>
+	<script src="./static/js/common/amazeui-modal.js"></script>
+	<script src="./static/js/common/tools.js"></script>
+</head>
+<body>
+	<div class="left-bar">
+		<div class="hub-title hub-title-disabled level-list-title">
+			<div class="am-dropdown" style="width: 100%" data-am-dropdown>
+				<div class="am-dropdown-toggle" style="width:100%">
+					<span class="hub-title-text">请选择文件夹</span>
+					<div class="hub-title-g">
+						<i class="fa fa-chevron-down"></i>
+					</div>
+				</div>
+				<ul class="am-dropdown-content ins-folder-list" onclick="$('.am-dropdown').dropdown('close')">
+					<!--Insert Folder list-->
+				</ul>
+			</div>
+		</div>
+		<div class="hub-content ins-level-list">
+			<div class="temple temple-open">
+				<div class="temple-name">light temple</div>
+				<div class="temple-path">light/temple.json</div>
+				<div class="temple-content">
+					<div class="level">
+						<div class="level-name">镜面误差</div>
+						<div class="level-path">light_23.json</div>
+					</div>
+					<div class="level">
+						<div class="level-name">关卡 24</div>
+						<div class="level-path">light_24.json</div>
+					</div>
+					<div class="level">
+						<div class="level-name">游戏要啸着玩</div>
+						<div class="level-path">light_25.json</div>
+					</div>
+				</div>
+			</div>
+			<div class="temple">
+				<div class="temple-name">ice temple</div>
+				<div class="temple-path">ice/temple.json</div>
+				<div class="temple-content">
+					<div class="level">
+						<div class="level-name">关卡 7</div>
+						<div class="level-path">ice_07.json</div>
+					</div>
+					<div class="level">
+						<div class="level-name">关卡 8</div>
+						<div class="level-path">ice_08.json</div>
+					</div>
+					<div class="level">
+						<div class="level-name">关卡 9</div>
+						<div class="level-path">ice_09.json</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="right-bar">
+		<div class="hub-title hub-title-disabled file-title panel-title">
+			<span class="hub-title-text">空闲</span>
+			<div class="hub-title-g">
+				<i class="fa fa-paper-plane submit-changes" onclick="Action.submitChanges();" style="display:none;"></i>
+				<i class="fa fa-times close-file" onclick="Action.closeScene();"></i>
+			</div>
+		</div>
+		<div class="hub-content ins-panel-content" data-panel-section="view">
+			<section class="panel-section">
+				<h3 class="panel-section-header">查看</h3>
+				<table>
+					<tr>
+						<td class="panel-caption">基准缩放</td>
+						<td><input type="number" value="21" class="panel-value inp-scale" /></td>
+					</th>
+				</table>
+			</section>
+			<section class="panel-section section-level-fix" style="display:none;">
+				<h3 class="panel-section-header">修正游戏进度</h3>
+				<p>当前玩家的游戏进度与关卡表不相容，会影响调试。<br />修复数据会删除不存在的关卡的进度信息。</p>
+				<table>
+					<tr>
+						<td class="panel-caption">游戏进度</td>
+						<td><input type="button" value="修复数据" class="am-btn am-btn-small am-btn-warning btn-add-node" onclick="Action.fixProgressData()" /></td>
+					</th>
+				</table>
+			</section>
+			<section class="panel-section section-level-add" style="display:none;">
+				<h3 class="panel-section-header">添加元素</h3>
+				<table>
+					<tr>
+						<td class="panel-caption">关卡</td>
+						<td><input type="button" value="添加关卡" class="am-btn am-btn-small am-btn-success btn-add-node" onclick="Action.addLevel()" /></td>
+					</tr>
+					<tr>
+						<td class="panel-caption">连接线</td>
+						<td><input type="button" value="添加连接线" class="am-btn am-btn-small am-btn-success btn-add-edge" onclick="Action.makeConnection()" /></td>
+					</tr>
+				</table>
+			</section>
+			<section class="panel-section section-level-quickedit" style="display:none;">
+				<h3 class="panel-section-header">快速修改</h3>
+				<table>
+					<tr>
+						<td class="panel-caption">选关版</td>
+						<td>
+							<input type="button" value="关卡全开" class="am-btn am-btn-small am-btn-primary btn-level-open" onclick="Action.setAllInitial(true)" />&nbsp;
+							<input type="button" value="关卡全关" class="am-btn am-btn-small am-btn-warning btn-level-close" onclick="Action.setAllInitial(false)" /></td>
+					</tr>
+				</table>
+			</section>
+			<section class="panel-section section-level-edge" style="display:none">
+				<span class="section-title-g">
+					<button class="am-btn am-btn-small btn-remove am-btn-danger">解除连接</button>
+				</span>
+				<h3 class="panel-section-header">连接线</h3>
+				<table>
+					<tr>
+						<td class="panel-caption">内部ID</td>
+						<td><input type="number" value="1" class="panel-value panel-value-save inp-link-internalid" disabled /></td>
+					</tr>
+					<tr>
+						<td class="panel-caption">起点</td>
+						<td><input type="number" value="1" class="panel-value panel-value-save inp-link-source" disabled /></td>
+					</tr>
+					<tr>
+						<td class="panel-caption">终点</td>
+						<td><input type="number" value="1" class="panel-value panel-value-save inp-link-target" disabled /></td>
+					</tr>
+				</table>
+			</section>
+			<section class="panel-section section-level-node" style="display:none">
+				<span class="section-title-g">
+					<button class="am-btn am-btn-small btn-remove am-btn-danger">移除关卡</button>
+					<button class="am-btn am-btn-small btn-save am-btn-secondary">应用</button>
+				</span>
+				<h3 class="panel-section-header">关卡</h3>
+				<table>
+					<tr>
+						<td class="panel-caption">内部ID</td>
+						<td><input type="number" value="1" class="panel-value panel-value-save inp-level-internalid" disabled /></td>
+					</tr>
+					<tr>
+						<td class="panel-caption">次序</td>
+						<td><input type="number" value="1" class="panel-value panel-value-save inp-level-index" /></td>
+					</tr>
+					<tr>
+						<td class="panel-caption">X</td>
+						<td><input type="number" value="0.3" class="panel-value panel-value-save inp-level-x" /></td>
+					</tr>
+					<tr>
+						<td class="panel-caption">Y</td>
+						<td><input type="number" value="0.5" class="panel-value panel-value-save inp-level-y" /></td>
+					</tr>
+					<tr>
+						<td class="panel-caption">编号</td>
+						<td><input type="number" value="26" step="1" min="0" max="32767" class="panel-value panel-value-save inp-level-id" /></td>
+					</tr>
+					<tr>
+						<td class="panel-caption">形式</td>
+						<td><select class="panel-value panel-value-save inp-level-type">
+							<option value="general">常规</option>
+							<option value="speed">竞速</option>
+							<option value="puzzle">解密</option>
+							<option value="dark">黑暗</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td class="panel-caption">文件名</td>
+						<td><input type="text" value="light_03.json" class="panel-value panel-value-save inp-level-filename" disabled /></td>
+					</tr>
+					<tr>
+						<td class="panel-caption">限时</td>
+						<td><input type="number" value="45" step="1" min="15" max="600" class="panel-value panel-value-save inp-level-tl" /></td>
+					</tr>
+					<tr>
+						<td class="panel-caption">移动端限时</td>
+						<td><input type="number" value="65" step="1" min="25" max="900" class="panel-value panel-value-save inp-level-tl-mob" /></td>
+					</tr>
+					<tr>
+						<td class="panel-caption">前置要求</td>
+						<td><input type="text" value="0" class="panel-value panel-value-save inp-level-required" /></td>
+					</tr>
+					<tr>
+						<td class="panel-caption">初始关卡</td>
+						<td><select class="panel-value panel-value-save inp-level-initial">
+							<option value="no">否</option>
+							<option value="yes">是</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td class="panel-caption">标题</td>
+						<td><input type="text" value="wdnmd" class="panel-value panel-value-save inp-level-title" disabled /></td>
+					</tr>
+					<tr>
+						<td class="panel-caption">尺寸</td>
+						<td><input type="text" value="39x29" class="panel-value panel-value-save inp-level-size" disabled /></td>
+					</tr>
+				</table>
+				<div style="min-height:300px;">
+					<img class="img-level-sprite" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="width:100%;transition:opacity .15s" onload="$(this).css('opacity',1)" />
+				</div>
+			</section>
+		</div>
+	</div>
+	<div class="main-view-outer" tabindex=0>
+		<span class="main-view" style="font-size: 21px;">
+			未打开任何场景
+		</span><span class="main-view-rp">&nbsp;</span>
+	</div>
+	<div class="load-blocker">加载中</div>
+</body>
+<script src="./static/js/html_actuator.js"></script>
+<script src="./static/js/action.js"></script>
+<script src="./static/js/work.js"></script>
+<script src="./static/js/init.js"></script>
+</html>

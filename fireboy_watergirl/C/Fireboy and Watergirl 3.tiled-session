@@ -1,0 +1,538 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "dist/data/ice/levels/ice_bonus_2.json",
+    "expandedProjectPaths": [
+        ".",
+        "dist/assets/tilemaps",
+        "dist/data",
+        "dist",
+        "dist/data/ice",
+        "dist/assets/tilemaps/tilesets",
+        "dist/data/ice/levels",
+        "dist/assets",
+        "dist/assets/atlasses",
+        "dist/data/tutorials/levels"
+    ],
+    "file.lastUsedOpenFilter": "全部文件 (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "C:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/A/dist/assets/tilemaps/tilesets/Chars.json": {
+            "scaleInDock": 1
+        },
+        "C:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/A/dist/assets/tilemaps/tilesets/Ground.json": {
+            "scaleInDock": 1
+        },
+        "C:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/A/dist/assets/tilemaps/tilesets/Objects.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/E/dist/assets/tilemaps/tilesets/Chars.json": {
+            "scaleInDock": 1
+        },
+        "C:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/E/dist/assets/tilemaps/tilesets/Ground.json": {
+            "scaleInDock": 1
+        },
+        "C:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/E/dist/assets/tilemaps/tilesets/LargeObjects.json": {
+            "scaleInDock": 1
+        },
+        "C:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/E/dist/assets/tilemaps/tilesets/Objects.json": {
+            "scaleInDock": 1
+        },
+        "C:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/E/dist/data/elements/light/levels/Light_2.json": {
+            "scale": 0.5841733870967741,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 641.076790336497,
+                "y": 497.283865401208
+            }
+        },
+        "C:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/E/dist/data/elements/light/levels/light-ez.json": {
+            "scale": 0.5841733870967741,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 576.0276100086281,
+                "y": 497.283865401208
+            }
+        },
+        "C:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/E/dist/data/elements/light/levels/light-long.json": {
+            "scale": 0.685011574074074,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 864.9488890766244,
+                "y": 400.72315620511955
+            }
+        },
+        "C:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/E/dist/data/tutorials/levels/crystal_03.json": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 655,
+                "y": 276
+            }
+        },
+        "C:/wamp64/hosts/PhpTests/test-app/4399-nmsl/assets/tilemaps/tilesets/Chars.json": {
+            "scaleInDock": 1
+        },
+        "C:/wamp64/hosts/PhpTests/test-app/4399-nmsl/assets/tilemaps/tilesets/Ground.json": {
+            "scaleInDock": 1
+        },
+        "C:/wamp64/hosts/PhpTests/test-app/4399-nmsl/assets/tilemaps/tilesets/Objects.json": {
+            "scaleInDock": 1
+        },
+        "E:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/E/dist/assets/tilemaps/tilesets/Chars.json": {
+            "scaleInDock": 1
+        },
+        "E:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/E/dist/assets/tilemaps/tilesets/Ground.json": {
+            "scaleInDock": 1
+        },
+        "E:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/E/dist/assets/tilemaps/tilesets/LargeObjects.json": {
+            "scaleInDock": 1
+        },
+        "E:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/E/dist/assets/tilemaps/tilesets/Objects.json": {
+            "scaleInDock": 1
+        },
+        "E:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/E/dist/data/elements/light/levels/Light_2.json": {
+            "scale": 0.5745967741935484,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 640.4491228070175,
+                "y": 496.87017543859656
+            }
+        },
+        "dist/assets/tilemaps/tilesets/Chars.json": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "dist/assets/tilemaps/tilesets/Ground.json": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "dist/assets/tilemaps/tilesets/LargeObjects.json": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "dist/assets/tilemaps/tilesets/Objects.json": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "dist/data/ice/levels/crystal_04.json": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 654,
+                "y": 430
+            }
+        },
+        "dist/data/ice/levels/ice_03.json": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 635.5,
+                "y": 444.5
+            }
+        },
+        "dist/data/ice/levels/ice_03_1.json": {
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 620.5,
+                "y": 460.5
+            }
+        },
+        "dist/data/ice/levels/ice_04.json": {
+            "scale": 0.75,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 684,
+                "y": 511.33333333333326
+            }
+        },
+        "dist/data/ice/levels/ice_04_1.json": {
+            "scale": 0.75,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 600,
+                "y": 505.99999999999994
+            }
+        },
+        "dist/data/ice/levels/ice_05.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 624.0935672514619,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_06.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 624.0935672514619,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_07.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 624.0935672514619,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_07_1.json": {
+            "scale": 0.85,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 657.6470588235294,
+                "y": 465.29411764705884
+            }
+        },
+        "dist/data/ice/levels/ice_08.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 624.0935672514619,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_08_1.json": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 666.6666666666665,
+                "y": 429.99999999999994
+            }
+        },
+        "dist/data/ice/levels/ice_09.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 624.0935672514619,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_09_1.json": {
+            "scale": 0.75,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 482.6666666666666,
+                "y": 467.33333333333326
+            }
+        },
+        "dist/data/ice/levels/ice_10.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 624.0935672514619,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_12.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 624.0935672514619,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_15.json": {
+            "scale": 0.85,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 590.0000000000001,
+                "y": 472.3529411764706
+            }
+        },
+        "dist/data/ice/levels/ice_15_1.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 622.4974200206398,
+                "y": 463.41474601536515
+            }
+        },
+        "dist/data/ice/levels/ice_16.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 624.0935672514619,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_16_1.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 623.5615181745212,
+                "y": 488.9531017085197
+            }
+        },
+        "dist/data/ice/levels/ice_17.json": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 580.5,
+                "y": 478.5
+            }
+        },
+        "dist/data/ice/levels/ice_18.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 624.0935672514619,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_18_1.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 623.5615181745212,
+                "y": 464.4788441692466
+            }
+        },
+        "dist/data/ice/levels/ice_19.json": {
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 632,
+                "y": 527
+            }
+        },
+        "dist/data/ice/levels/ice_20.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 624.0935672514619,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_21.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 624.0935672514619,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_22.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 624.0935672514619,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_23.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 624.0935672514619,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_23_1.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 623.5615181745212,
+                "y": 464.4788441692466
+            }
+        },
+        "dist/data/ice/levels/ice_24.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 581.5296410962046,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_24_1.json": {
+            "scale": 0.75,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 616,
+                "y": 477.99999999999994
+            }
+        },
+        "dist/data/ice/levels/ice_26.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 624.0935672514619,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_28.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 624.6256163284027,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_28_1.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 623.5615181745212,
+                "y": 464.4788441692466
+            }
+        },
+        "dist/data/ice/levels/ice_30.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 624.6256163284027,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_30_1.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 624.6256163284027,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_31.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 625.1576654053434,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_32.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 624.6256163284027,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_33.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 624.6256163284027,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_34.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 624.6256163284027,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_35.json": {
+            "scale": 0.85,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 625.2941176470589,
+                "y": 477.05882352941177
+            }
+        },
+        "dist/data/ice/levels/ice_35_1.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 624.0935672514619,
+                "y": 464.47884416924666
+            }
+        },
+        "dist/data/ice/levels/ice_36.json": {
+            "scale": 0.85,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 593.529411764706,
+                "y": 468.82352941176475
+            }
+        },
+        "dist/data/ice/levels/ice_36_1.json": {
+            "scale": 0.9397629310344827,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 624.0935672514619,
+                "y": 604.9398004815961
+            }
+        },
+        "dist/data/ice/levels/ice_bonus_1.json": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 624,
+                "y": 465.99999999999994
+            }
+        },
+        "dist/data/ice/levels/ice_bonus_2.json": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 589.3333333333334,
+                "y": 557.9999999999999
+            }
+        },
+        "dist/data/ice/levels/ice_bonus_2.json#Objects": {
+            "dynamicWrapping": false
+        },
+        "dist/data/tutorials/levels/forest_01.json": {
+            "scale": 0.7695913461538462,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 623.0579415898796,
+                "y": 464.5322505075745
+            }
+        },
+        "dist/data/tutorials/levels/ice_02.json": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1238.5,
+                "y": 794.5
+            }
+        },
+        "dist/data/tutorials/levels/light_01.json": {
+            "scale": 0.9,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 672.7777777777778,
+                "y": 612.7777777777778
+            }
+        }
+    },
+    "last.externalTilesetPath": "E:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/C/dist/assets/tilemaps/tilesets",
+    "openFiles": [
+        "dist/data/ice/levels/ice_bonus_1.json",
+        "dist/data/ice/levels/ice_bonus_2.json"
+    ],
+    "project": "Fireboy and Watergirl 3.tiled-project",
+    "property.type": "int",
+    "recentFiles": [
+        "dist/data/ice/levels/ice_bonus_1.json",
+        "dist/data/ice/levels/ice_bonus_2.json",
+        "E:/wamp64/hosts/PhpTests/test-app/4399-nmsl/Fireboy and Watergirl/E/dist/data/elements/light/levels/Light_2.json",
+        "dist/data/ice/levels/ice_24_1.json",
+        "dist/data/ice/levels/ice_36_1.json",
+        "dist/data/ice/levels/ice_35_1.json",
+        "dist/data/ice/levels/ice_30_1.json",
+        "dist/data/ice/levels/ice_28_1.json",
+        "dist/data/ice/levels/ice_23_1.json",
+        "dist/data/ice/levels/ice_18_1.json",
+        "dist/data/ice/levels/ice_16_1.json",
+        "dist/data/ice/levels/ice_15_1.json"
+    ],
+    "resizeMap.removeObjects": false,
+    "tileset.lastUsedFilter": "JSON 图块集文件 [Tiled 1.1] (*.json)"
+}
